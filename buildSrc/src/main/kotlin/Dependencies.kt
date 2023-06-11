@@ -11,6 +11,9 @@ object Dependencies {
     // validation
     const val VALIDATION = "org.springframework.boot:spring-boot-starter-web"
 
+    // transaction
+    const val SPRING_TRANSACTION = "org.springframework:spring-tx:${DependencyVersions.SPRING_TRANSACTION}"
+
     // security
     const val SPRING_SECURITY = "org.springframework.boot:spring-boot-starter-security"
 
