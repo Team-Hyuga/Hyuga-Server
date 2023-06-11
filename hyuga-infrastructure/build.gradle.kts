@@ -31,8 +31,26 @@ dependencies {
     // jackson
     implementation(Dependencies.JACKSON)
 
+    // uuid
+    implementation(Dependencies.UUID)
+
+    // aws
+    implementation(Dependencies.AWS)
+
     // impl
     implementation(project(":hyuga-core"))
+}
+
+allOpen {
+    annotation("javax.persistence.Entity")
+    annotation("javax.persistence.MappedSuperclass")
+    annotation("javax.persistence.Embeddable")
+}
+
+noArg {
+    annotation("javax.persistence.Entity")
+    annotation("javax.persistence.MappedSuperclass")
+    annotation("javax.persistence.Embeddable")
 }
 
 tasks.getByName<Jar>("jar") {
