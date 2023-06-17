@@ -2,7 +2,6 @@ package team.hyuga.server.global.filter
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.http.MediaType
-import org.springframework.stereotype.Component
 import org.springframework.web.filter.OncePerRequestFilter
 import team.hyuga.server.common.error.BusinessException
 import team.hyuga.server.global.error.ErrorResponse
@@ -12,7 +11,6 @@ import javax.servlet.FilterChain
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-@Component
 class ExceptionHandlerFilter(
     private val objectMapper: ObjectMapper
 ) : OncePerRequestFilter() {

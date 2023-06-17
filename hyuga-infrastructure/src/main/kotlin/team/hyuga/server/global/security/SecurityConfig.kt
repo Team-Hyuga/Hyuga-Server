@@ -8,10 +8,13 @@ import org.springframework.security.config.http.SessionCreationPolicy
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.web.SecurityFilterChain
+import team.hyuga.server.global.filter.FilterConfig
+import team.hyuga.server.global.security.jwt.JwtParser
 
 @Configuration
 class SecurityConfig(
-    private val objectMapper: ObjectMapper
+    private val objectMapper: ObjectMapper,
+    private val jwtParser: JwtParser
 ) {
 
     @Bean
@@ -27,6 +30,9 @@ class SecurityConfig(
             .and()
             .authorizeRequests()
             .anyRequest().denyAll()
+
+            .and()
+            .apply(FilterConfig(objectMapper, jwtParser))
 
         return http.build()
     }
