@@ -8,14 +8,14 @@ import team.hyuga.server.domain.auth.model.AuthType
 
 @RedisHash
 class RefreshTokenEntity(
-        @Id
+    @Id
     val token: String,
 
-        @Indexed
+    @Indexed
     val email: String,
 
-        val authType: AuthType,
+    val authType: AuthType,
 
-        @TimeToLive
+    @TimeToLive
     val ttl: Int
 )
