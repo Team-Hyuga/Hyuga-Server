@@ -34,6 +34,10 @@ dependencies {
     // uuid
     implementation(Dependencies.UUID)
 
+    // mapstruct
+    implementation(Dependencies.MAPSTRUCT)
+    kapt(Dependencies.MAPSTRUCT_PROCESSOR)
+
     // aws
     implementation(Dependencies.AWS)
 

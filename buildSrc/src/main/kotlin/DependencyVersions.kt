@@ -4,4 +4,5 @@ object DependencyVersions {
     const val JWT_VERSION = "0.9.1"
     const val UUID_VERSION = "3.1.4"
     const val AWS_VERSION = "2.2.6.RELEASE"
+    const val MAPSTRUCT_VERSION = "1.5.3.Final"
 }

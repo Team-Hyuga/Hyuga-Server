@@ -32,6 +32,10 @@ object Dependencies {
     // uuid
     const val UUID = "com.fasterxml.uuid:java-uuid-generator:${DependencyVersions.UUID_VERSION}"
 
+    // mapstruct
+    const val MAPSTRUCT = "org.mapstruct:mapstruct:${DependencyVersions.MAPSTRUCT_VERSION}"
+    const val MAPSTRUCT_PROCESSOR = "org.mapstruct:mapstruct-processor:${DependencyVersions.MAPSTRUCT_VERSION}"
+
     // aws
     const val AWS = "org.springframework.cloud:spring-cloud-starter-aws:${DependencyVersions.AWS_VERSION}"
 }
