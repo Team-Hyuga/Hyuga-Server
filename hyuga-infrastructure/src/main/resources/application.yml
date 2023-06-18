@@ -17,6 +17,10 @@ spring:
   jackson:
     property-naming-strategy: SNAKE_CASE
 
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: 6379
+
 jwt:
   secret-key: ${JWT_SECRET_KEY}
   access-exp: ${JWT_ACCESS_EXP:3600}
