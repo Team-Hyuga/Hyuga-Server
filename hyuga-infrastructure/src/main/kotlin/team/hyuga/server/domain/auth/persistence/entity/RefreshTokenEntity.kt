@@ -5,6 +5,7 @@ import org.springframework.data.redis.core.RedisHash
 import org.springframework.data.redis.core.TimeToLive
 import org.springframework.data.redis.core.index.Indexed
 import team.hyuga.server.domain.auth.model.AuthType
+import java.util.UUID
 
 @RedisHash
 class RefreshTokenEntity(
@@ -12,7 +13,7 @@ class RefreshTokenEntity(
     val token: String,
 
     @Indexed
-    val email: String,
+    val userId: UUID,
 
     val authType: AuthType,
 
