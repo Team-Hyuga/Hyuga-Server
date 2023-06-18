@@ -3,7 +3,7 @@ package team.hyuga.server.global.security.auth
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
-import team.hyuga.server.domain.user.domain.Authority
+import team.hyuga.server.domain.user.model.Authority
 import java.util.UUID
 
 class AuthDetails(
