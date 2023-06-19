@@ -11,7 +11,7 @@ dependencies {
     implementation(Dependencies.SPRING_WEB)
 
     // validation
-    implementation(Dependencies.VALIDATION)
+    implementation(Dependencies.SPRING_VALIDATION)
 
     // database
     implementation(Dependencies.SPRING_DATA_JPA)

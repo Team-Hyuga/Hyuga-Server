@@ -9,7 +9,7 @@ object Dependencies {
     const val SPRING_WEB = "org.springframework.boot:spring-boot-starter-web"
 
     // validation
-    const val VALIDATION = "org.springframework.boot:spring-boot-starter-web"
+    const val SPRING_VALIDATION = "org.springframework.boot:spring-boot-starter-validation"
 
     // transaction
     const val SPRING_TRANSACTION = "org.springframework:spring-tx:${DependencyVersions.SPRING_TRANSACTION}"
