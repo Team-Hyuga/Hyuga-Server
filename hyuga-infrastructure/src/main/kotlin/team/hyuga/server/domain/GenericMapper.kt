@@ -1,4 +1,4 @@
-package team.hyuga.server
+package team.hyuga.server.domain
 
 interface GenericMapper<D, E> {
 
